@@ -1,0 +1,370 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+li{
+    list-style: none;
+    padding: 0;
+}
+h1, p, ul{
+    margin: 0;
+}
+input{
+    border: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* GLOBAL */
+:root{
+    --header-height:3rem;
+    /* COLORS */
+    --color-red:#F23005;
+    --color-pink:#BF3983;
+    --color-blue:#2C2F73;
+    --color-grey:#352D40;
+    --color-black:#1D1A26;
+    --color-verde:#04BF10;
+
+    /* FONT SIZE */
+    --big-font-size:2.5rem;
+    --normal-font-size:.938rem;
+}
+@media screen and (min-width:768px){
+    :root{
+        --big-font-size:5rem;
+        --normal-font-size:1rem;
+    }
+}
+.container{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url("../img/background-black.png") center repeat;
+    padding: 0;
+    font-size: var(--normal-font-size);
+
+}
+
+/* HEADER */
+.nav_logo{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem;
+    text-shadow: 0 0 1px black;
+    margin-left: 20px;
+    flex: 1;
+}
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-image: linear-gradient(to bottom, var(--color-black), var(--color-grey),rgb(53, 45, 64,.5),rgb(53, 45, 64,0));
+}
+.bd_grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100%-2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav{
+    height:var(--header-height) ;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: 0 auto;
+}
+@media screen and (max-width:768px){
+    /* CASO FOR USAR MENU FIXO EM TELA GRANDE, PUXAR O .nav_menu AQ PRA DENTRO */
+}
+.nav_menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1.5rem 0;
+    background: rgba(255,255,255, .4);
+    backdrop-filter: blur(10px);
+    transition: .5;
+}
+@media screen and (min-width:768px){
+    .nav_menu{
+        width: 40%;
+    }
+}
+.nav_close{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-shadow: 0 0 1px black;
+}
+.nav_item{
+    margin-bottom: 2rem;
+}
+.nav_close, .nav_link, .nav_logo, .nav_toggle{
+    color: var(--color-verde);
+}
+.nav_link{
+    text-shadow: 1px 1px 1px black;
+}
+.nav_link:hover{
+    color: white;
+}
+.nav_toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.bx-menu{
+    margin-right: 20px;
+    cursor: pointer;
+    color: var(--color-verde);
+    text-shadow: 0 0 1px black;
+}
+/* SHOW MENU */
+.show{
+    right: 0;
+}
+/* MEDIA QUERIES HEADER */
+/* @media screen and (min-width:769px){
+    .nav_menu{
+        width: 40%;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav_toggle, .nav_close{
+        display: none;
+    }
+    .nav_list{
+        display: flex;
+    }
+    .nav_item{
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+} */
+
+/* ABOUT */
+.intro{
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+.photo_pers img{
+    height:300px;
+    border-radius:50%;
+    box-shadow: 0 0 10px 8px var(--color-verde);
+    margin: 60px auto;
+}
+h1{
+    margin: 30px 0;
+    margin-top: 300px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px var(--color-verde);
+}
+.about{
+    color: white;
+}
+.about h2{
+    color: var(--color-verde);
+    font-size: 60px;
+}
+.about p{
+    text-align: center;
+    padding:10px 30px;
+    font-size: 24px;
+    margin-bottom: 120px;
+}
+.redes h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.links a img{
+    height: 70px;
+    margin-bottom: 120px;
+}
+
+/* SKILLS */
+.inskills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.skills h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-verde);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inskills div{
+    max-width: 300px;
+    text-align: center;
+}
+.inskills h3{
+    font-size: 30px;
+    color: var(--color-verde);
+}
+.inskills p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact{
+    width: 960px;
+}
+.contact p{
+    color: white;
+}
+.contact h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-verde);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.incontact{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+}
+.whats{
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+.whats p{
+    display: block;
+    text-align: center;
+}
+.whats a img{
+    margin: 0 auto;
+    height: 150px;
+    display: block;
+    text-align: center;
+}
+.form{
+    flex: 2 0 300px;
+    color: white;
+    background:rgba(17, 16, 22, 0.678) ;
+    border-radius: 30px;
+    box-shadow: 0px 0px 2px black;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    text-align: center;
+}
+.form p{
+    margin-bottom: 20px;
+}
+form{
+    text-align: start;
+}
+form label{
+    text-transform:uppercase ;
+    margin-bottom: 8px;
+    display: block;
+}
+form input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+form input:focus, textarea:focus{
+    outline:2px solid var(--color-verde);
+    border-radius: 5px;
+}
+form button{
+    background: var(--color-verde);
+    color: white;
+    font-size: 24px;
+    padding: 20px 30px;
+    border-radius:20px ;
+    width: 50%;
+    cursor: pointer;
+}
+form button:hover{
+    color: var(--color-verde);
+    background: white;
+}
+form div{
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+.footer::before{
+    content: "";
+    height: 3px;
+    width: 90%;
+    background: var(--color-verde);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.footer{
+    background:rgba(17, 16, 22, 0.8) ;
+    display: flex;
+    flex-direction: column;
+}
+.div_footers{
+    justify-content: space-around;
+}
+.div_footers h3{
+    color: white;
+    padding-top: 20px;
+}
+.nav_footer {
+    flex-direction: column !important;
+}
+.nav_footer li{
+    padding: 10px;
+}
+.nav_footer li a{
+    color: var(--color-verde);
+}
+.nav_footer li a:hover::before{
+    content: "»";
+    color: currentColor;
+}
+.footer p{
+    color: rgba(245, 245, 245, 0.856);
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendell Priebe</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- ------------------------------HEADER---------------------------------- -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav_logo">
+                <a href="#">Wendell</a>
+            </div>
+            
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+            <div class="nav_menu" id="nav_menu">
+                <div class="nav_close" id="nav_close">
+                    <i class="bx bx-x"></i>
+                </div>
+
+                <ul class="nav_list" id="menu">
+                    <li class="nav_item"><a href="#about" class="nav_link">Quem Sou</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">O que Faço</a></li>
+                    <li class="nav_item"><a href="#portfolio" class="nav_link">Portfólio</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Fale Comigo</a></li>
+                </ul>
+            </div>
+
+            
+
+            
+        </nav>
+    </header>
+
+    <!-- --------------------------------SOBRE--------------------------------- -->
+    <main class="container">
+        <section class="intro">
+            <div class="photo_pers">
+                <!-- <img src="img/foto-perfil.jpg" alt="Foto Perfil"> -->
+            </div>
+            <div class="big_logo">
+                <h1>Wendell Priebe</h1>
+            </div>
+        </section>
+    
+        <section class="about" id="about">
+            <div>
+                <h2>Olá,</h2>
+                <p>
+                    sou estudante de programação cursando analise e desenvolvimento de sistema. Voltado para a área web, desenvolvo aplicações em Javascript, com NodeJS e seu framework Express. Amante da tecnologia de um modo geral desde o Arduino e Raspberry ao código de programação. Buscando sempre melhorar e aprender algo novo todo dia, com o objetivo de ser um programador renomado na comunidade.
+                </p>
+            </div>
+
+            <div class="redes">
+                <div>
+                    <h2>Você pode me encontrar nas redes sociais</h2>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/wendell-priebe" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icons/github.png" alt="Github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/wendell-priebe-0113031a1/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icons/linkedin.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------HABILIDADES------------------------------------- -->
+        <section class="skills" id="skills">
+            <h2>Tecnologias que trabalho</h2>
+            <article class="inskills">
+
+                <div>
+                    <h3>HTML</h3>
+                    <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+                </div>
+                <div>
+                    <h3>CSS</h3>
+                    <p>É um mecanismo para adicionar estilo a um documento web.</p>
+                </div>
+                <div>
+                    <h3>Javascript</h3>
+                    <p>É uma linguagem de programação interpretada estruturada.</p>
+                </div>
+                <div>
+                    <h3>NodeJS</h3>
+                    <p>Ambiente de execução Javascript server-side.</p>
+                </div>
+                <div>
+                    <h3>Express</h3>
+                    <p>Framework para NodeJS, possui conjunto completo de ferramentas para desenvolvimento de aplicações web e APIs.</p>
+                </div>
+                <div>
+                    <h3>GIT</h3>
+                    <p>Sistemas de controle de versão de código distribuído.</p>
+                </div>
+                <div>
+                    <h3>Arduino</h3>
+                    <p>É uma plataforma de prototipagem eletrônica de hardware livre e IOT, um micro-controlador programável.</p>
+                </div>
+                <div>
+                    <h3>Raspberry Pi</h3>
+                    <p>É um micro-computador multiplataforma promovendo o ensino a computação e IOT.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-------------------------------------- PORTFOLIO------------------------------------- -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+        </section>
+
+        <!-- -------------------------------------CONTATO--------------------------------------- -->
+        <section class="contact" id="contact">
+            <h2>Fale comigo</h2>
+            <div class="incontact">
+                <div class="whats">
+                    <p>WhatsApp:</p>
+                    <a href=" https://api.whatsapp.com/send?phone=+55 53 984272899" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icons/whats.png" alt="whats">
+                    </a>
+                </div>
+                <div class="form">
+                    <p>Envie sua mensagem:</p>
+                    <form action="">
+            
+                        <label for="name">Seu nome (*)</label>
+                        <input type="text" required="" name="nome" label="Seu Nome" placeholder="Digite aqui" class="required field">
+    
+                        <label for="email">E-mail (*)</label>
+                        <input type="email" required="" name="email" label="E-mail" placeholder="email@exemplo.com.br" class="required field">
+    
+                        <label for="assunto">Assunto (*)</label>
+                        <input type="text" required="" name="assunto" label="Assunto" placeholder="Digite aqui" class="required field">
+    
+                        <label for="mensagem">Mensagem (*)</label>
+                        <textarea name="mensagem" required="" label="mensagem" placeholder="Escreva aqui sua mensagem" class="required field" rows="5" style="resize: none"></textarea>
+                       
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- -----------------------------------FOOTER----------------------------------- -->
+    <footer class="footer">
+        <section>
+            <div class="container div_footers">
+                <nav>
+                    <h3>Menu</h3>
+                    <ul class="nav_footer">
+                        <li><a href="#menu">Inicio</a></li>
+                        <li><a href="#about">Quem Sou</a></li>
+                        <li><a href="#skills">O que Faço</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Fale Comigo</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Redes Sociais</h3>
+                    <ul class="nav_footer">
+                        <li><a href="https://github.com/wendell-priebe" target="_blank">Linkdin</a></li>
+                        <li><a href="https://www.linkedin.com/in/wendell-priebe-0113031a1/" target="_blank">Github</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <div>
+            <p>Todos os direito reservado <a href="https://www.instagram.com/wendellpriebe/" target="_blank"> Wendell Priebe®</a>. V1.0</p>
+        </div>
+    </footer>
+
+    <!-- GSAP - PARA ANIMAAOES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- ARQUIVO SCRIPT -->
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
