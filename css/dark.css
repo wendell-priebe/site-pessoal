@@ -93,6 +93,52 @@ body{
     align-items: center;
     margin: 0 auto;
 }
+.dark_button{
+    flex: 1;
+}
+.box_button{
+    width: 80px;
+    height: 20px;
+    background: var(--color-verde);
+    border: 2px ridge var(--color-bkp-verde);
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    position: absolute;
+    top: 13px;
+}
+.button{
+    width: 30px;
+    height: 30px;
+    border: 1px ridge white;
+    border-radius: 50%;
+    background: var(--color-grey);
+    cursor: pointer;
+    transition: 300ms;
+    position: absolute;
+    right: 0;
+    top: -7px;
+}
+.button_active{
+    left: 0;
+    top: -5px;
+    transition: 300ms;
+    border: 1px ridge var(--color-verde);
+    background: white;
+}
+@media (max-width:375px){
+    .nav_logo{
+        font-size: 25px;
+    }
+    .box_button{
+        width: 70px;
+        height: 15px;
+    }
+    .button{
+        width: 20px;
+        height: 20px;
+        top: -5px;
+    }
+}
 @media screen and (max-width:768px){
     /* CASO FOR USAR MENU FIXO EM TELA GRANDE, PUXAR O .nav_menu AQ PRA DENTRO */
 }

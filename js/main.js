@@ -1,7 +1,28 @@
-const navMenu = document.getElementById("nav_menu"),
+const 
+    navMenu = document.getElementById("nav_menu"),
     toggleMenu = document.getElementById("nav_toggle"),
-    closeMenu = document.getElementById("nav_close");
+    closeMenu = document.getElementById("nav_close"),
 
+    estilo = document.getElementById("estilo"),
+    button_dark = document.getElementById("button");
+
+
+// ATIVAR MODO DARK
+button_dark.addEventListener("click", ()=>{
+
+    button_dark.classList.toggle('button_active')
+
+    if (button_dark.classList.contains("button_active")) {
+        estilo.href = "css/dark.css"
+    } else {
+        estilo.href = "css/white.css"
+    }
+
+
+})
+
+
+// MENU LATERAL
     // SHOW
 toggleMenu.addEventListener(`click`, ()=>{
     navMenu.classList.toggle(`show`)
