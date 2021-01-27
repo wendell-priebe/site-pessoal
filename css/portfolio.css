@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1D1A26;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+/* PARTICULES */
+#particles-js{
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/* HEADER */
+.header{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+.back{
+    cursor: pointer;
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+.title{
+    margin: 0 auto;
+    font-weight:bold ;
+    font-size: 48px;
+    display: inline-block;
+}
+@media screen and (max-width:425px){
+    .header{
+        flex-direction: column;
+    }
+    .back{
+        margin-left: 0;
+    }
+}
+
+/* PROJETOS */
+.projetos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.projeto{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.projeto:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.description{
+    padding: 20px;
+    flex: 1 1 200px;
+}
+.description h3{
+    font-size: 28px;
+}
+.description p{
+    margin-top: 10px;
+}
+.description a{
+    color: #04BF10;
+    text-shadow: 0 0 5px green;
+}
+.sampleImg{
+    flex: 1 1 300px;
+    height: 50%;
+    width: 50%;
+}
+@media screen and (max-width:425px){
+    .description{
+        margin: 0 auto;
+    }
+    .sampleImg{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* FOOTER */
+.footer{
+    padding: 40px;
+    text-align: center;
+}
